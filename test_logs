@@ -1,0 +1,100 @@
+(deepspeech-train-venv) linin@linin-Lenovo:~/DeepSpeech$ python3 DeepSpeech.py --test_files /home/linin/deepspeech-data/primewords_test.csv --checkpoint_dir /home/linin/deepspeech-data/checkpoints --bytes_output_mode true --n_hidden 256  --scorer /home/linin/deepspeech-data/kenlm-CN.scorer --test_random_seed 250 --lm_alpha 0.24178848476400905 --lm_beta 6.196098837463925  --test_batch_size 128
+I Loading best validating checkpoint from /home/linin/deepspeech-data/checkpoints/best_dev-89447
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel
+I Loading variable from checkpoint: global_step
+I Loading variable from checkpoint: layer_1/bias
+I Loading variable from checkpoint: layer_1/weights
+I Loading variable from checkpoint: layer_2/bias
+I Loading variable from checkpoint: layer_2/weights
+I Loading variable from checkpoint: layer_3/bias
+I Loading variable from checkpoint: layer_3/weights
+I Loading variable from checkpoint: layer_5/bias
+I Loading variable from checkpoint: layer_5/weights
+I Loading variable from checkpoint: layer_6/bias
+I Loading variable from checkpoint: layer_6/weights
+Testing model on /home/linin/deepspeech-data/primewords_test.csv
+Test epoch | Steps: 40 | Elapsed Time: 0:23:31                                 
+Test on /home/linin/deepspeech-data/primewords_test.csv - WER: 1.000000, CER: 0.734152, loss: 148.640976
+--------------------------------------------------------------------------------
+Best WER: 
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.033333, loss: 40.644321
+ - wav: file:///home/linin/deepspeech-data/primewords_md_2018_set1/audio_files/c/c7/c79de8d1-fe79-4b52-90cf-a93e65b3a4a1.wav
+ - src: "一点二一百五十六点一一二五四八一点二一百五十六点一一二五四三"
+ - res: "一点二一百五十六点一一二五四八一点二一百五十六点一一二五四百"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.043478, loss: 23.053095
+ - wav: file:///home/linin/deepspeech-data/primewords_md_2018_set1/audio_files/0/08/08707024-2aa5-4f75-b7c9-e8c420415d33.wav
+ - src: "一千九百七十三至七十四 一千九百九十七至九十八"
+ - res: "一千九百七十三至七十四一千九百九十七至九十八"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.066667, loss: 9.339564
+ - wav: file:///home/linin/deepspeech-data/primewords_md_2018_set1/audio_files/a/ab/abd2205d-a439-44dc-82ce-67b97196faec.wav
+ - src: "二零零八年六月 二零一一年六月"
+ - res: "二零零八年六月二零一一年六月"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.166667, loss: 46.995453
+ - wav: file:///home/linin/deepspeech-data/primewords_md_2018_set1/audio_files/6/69/691dd02b-6365-4260-8380-7e455e87b98f.wav
+ - src: "八百二十六 三百二十三 六万九千九百二十四至七万二千零百零四"
+ - res: "双百二十六三百二十三六万九千九百二十四至七外两千零百零四"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.166667, loss: 39.076275
+ - wav: file:///home/linin/deepspeech-data/primewords_md_2018_set1/audio_files/7/73/73afa671-95fd-42b0-897e-ad3706738d32.wav
+ - src: "一九八一年十一月三十日至十二月十三日"
+ - res: "一九八一年十一月在十日至十二月是三月"
+--------------------------------------------------------------------------------
+Median WER: 
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.750000, loss: 133.103546
+ - wav: file:///home/linin/deepspeech-data/primewords_md_2018_set1/audio_files/f/f3/f3905927-a99b-4301-b646-76dc497a71a7.wav
+ - src: "在上海 他主编了 侨声报 文艺副刊 和 创造诗丛"
+ - res: "在上海他不变了吃生初为一期开和成到是从"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.750000, loss: 133.100327
+ - wav: file:///home/linin/deepspeech-data/primewords_md_2018_set1/audio_files/1/19/1921eed3-c2ee-4191-852f-5524b389bf18.wav
+ - src: "问题是杜环说唐军七万 难道就真的很可信吗"
+ - res: "二地是度化说同之态万们到九这的和可新马"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.750000, loss: 133.096817
+ - wav: file:///home/linin/deepspeech-data/primewords_md_2018_set1/audio_files/4/45/45141ded-7b85-471b-8c18-313b3913ec84.wav
+ - src: "镇政府所在地 东距汉中三百二十公里 宁强四十公里"
+ - res: "在中不所在地东仅安高不满二十入屋并不是是入后"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.750000, loss: 132.858490
+ - wav: file:///home/linin/deepspeech-data/primewords_md_2018_set1/audio_files/a/a3/a3efc836-3a0d-4484-af89-a7beef5cf366.wav
+ - src: "建垂花门一座 铺设了山门至墓区中抽线道路"
+ - res: "为向化内一位和显了由人这五区中作县到路"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.750000, loss: 132.401855
+ - wav: file:///home/linin/deepspeech-data/primewords_md_2018_set1/audio_files/2/25/2521465d-6863-44a8-a8ec-3f51f218139d.wav
+ - src: "曾提出以代表协助对中国大陆谈判 代表参与"
+ - res: "三地地一代两县出对中我大入他大代要在于"
+--------------------------------------------------------------------------------
+Worst WER: 
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 1.136364, loss: 255.919174
+ - wav: file:///home/linin/deepspeech-data/primewords_md_2018_set1/audio_files/8/88/88896915-eb9a-403c-85b4-c422c04f4b76.wav
+ - src: "戴安娜自然不愿意 但却无法阻止在和瑟西战斗时"
+ - res: "但而那自两部元一大区五发主并和不分大和在西在于都中在到十"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 1.166667, loss: 191.427490
+ - wav: file:///home/linin/deepspeech-data/primewords_md_2018_set1/audio_files/6/62/62c64423-1d1d-4125-8ab0-f9ae133e9996.wav
+ - src: "经国务院反洗钱行政主管部门负责人批准"
+ - res: "其为后五月为还是是二七年为国不能不过人之之早"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 1.428571, loss: 369.369202
+ - wav: file:///home/linin/deepspeech-data/primewords_md_2018_set1/audio_files/4/44/44849675-9a06-42f8-af4f-2f41d334e04a.wav
+ - src: "在起飞 滑翔和降落时 是不是一定要很大风呢"
+ - res: "在其刑或下和家了时曾是一家要有而大分了在新分有卖原家老是是是一年要和大分了"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 1.555556, loss: 340.895691
+ - wav: file:///home/linin/deepspeech-data/primewords_md_2018_set1/audio_files/d/d2/d2bc4c4f-4274-47f5-bc45-e756d3d5d8f0.wav
+ - src: "可在市区汽车站 距博物馆十五分钟步程"
+ - res: "港则是区其也上建市县地分中不忌和在是学其者上去多卖是五分中不是"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 1.736842, loss: 415.602203
+ - wav: file:///home/linin/deepspeech-data/primewords_md_2018_set1/audio_files/7/72/72343fee-0f56-4174-aabc-d118c24e2200.wav
+ - src: "它的主要特点是 运用现代岩石力学的理论"
+ - res: "她的一要对定是全用心大应是一是的理吗他的他的不要可点是于元现大也是一家的准入"
+
