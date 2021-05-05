@@ -17,7 +17,7 @@ Testing model on /home/linin/deepspeech-data/primewords_test.csv
 Test epoch | Steps: 40 | Elapsed Time: 0:23:31                                 
 Test on /home/linin/deepspeech-data/primewords_test.csv - WER: 1.000000, CER: 0.734152, loss: 148.640976
 --------------------------------------------------------------------------------
-Best WER: 
+Best CER: 
 --------------------------------------------------------------------------------
 WER: 1.000000, CER: 0.033333, loss: 40.644321
  - wav: file:///home/linin/deepspeech-data/primewords_md_2018_set1/audio_files/c/c7/c79de8d1-fe79-4b52-90cf-a93e65b3a4a1.wav
@@ -44,7 +44,7 @@ WER: 1.000000, CER: 0.166667, loss: 39.076275
  - src: "一九八一年十一月三十日至十二月十三日"
  - res: "一九八一年十一月在十日至十二月是三月"
 --------------------------------------------------------------------------------
-Median WER: 
+Median CER: 
 --------------------------------------------------------------------------------
 WER: 1.000000, CER: 0.750000, loss: 133.103546
  - wav: file:///home/linin/deepspeech-data/primewords_md_2018_set1/audio_files/f/f3/f3905927-a99b-4301-b646-76dc497a71a7.wav
@@ -71,7 +71,7 @@ WER: 1.000000, CER: 0.750000, loss: 132.401855
  - src: "曾提出以代表协助对中国大陆谈判 代表参与"
  - res: "三地地一代两县出对中我大入他大代要在于"
 --------------------------------------------------------------------------------
-Worst WER: 
+Worst CER: 
 --------------------------------------------------------------------------------
 WER: 1.000000, CER: 1.136364, loss: 255.919174
  - wav: file:///home/linin/deepspeech-data/primewords_md_2018_set1/audio_files/8/88/88896915-eb9a-403c-85b4-c422c04f4b76.wav
